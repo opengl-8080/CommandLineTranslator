@@ -37,3 +37,7 @@ eclipse {
         name = 'CommandLineTranslator'
     }
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
