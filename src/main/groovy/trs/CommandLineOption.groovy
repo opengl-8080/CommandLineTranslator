@@ -51,13 +51,13 @@ public class CommandLineOption {
     static CommandLineOption parse(args) {
         def cli = new CliBuilder(usage: 'trs')
         cli.with {
-            e longOpt: 'e2j', 'English to Japanese. <default>'
-            j longOpt: 'j2e', 'Japanese to English.'
-            h longOpt: 'help', 'show this usage.'
-            _ longOpt: 'proxy', args: 1, argName: 'proxy uri', 'proxy uri. example: -p http://proxy.host.name:8080'
-            u longOpt: 'username', args: 1, argName: 'username', 'proxy user name.'
-            p longOpt: 'password', args: 1, argName: 'password', 'proxy password.'
-            _ longOpt: 'debug', 'run with debug mode.'
+            e longOpt: 'e2j', '英語を日本語に翻訳します。デフォルト。'
+            j longOpt: 'j2e', '日本語を英語に翻訳します。'
+            h longOpt: 'help', 'この usage を表示します。'
+            _ longOpt: 'proxy', args: 1, argName: 'proxy uri', 'プロキシの URI を指定します。（例）http://proxy.host.name:8080'
+            u longOpt: 'username', args: 1, argName: 'username', 'プロキシ認証のユーザー名を指定します。'
+            p longOpt: 'password', args: 1, argName: 'password', 'プロキシ認証のパスワードを指定します。'
+            _ longOpt: 'debug', 'デバッグモードで実行します。'
         }
         
         def cmd = cli.parse(args)
