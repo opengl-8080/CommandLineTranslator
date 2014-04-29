@@ -49,7 +49,7 @@ public class CommandLineOption {
      * @return 解析結果
      */
     static CommandLineOption parse(args) {
-        def cli = new CliBuilder(usage: 'trs')
+        def cli = new CliBuilder(usage: 'trs <option>')
         cli.with {
             e longOpt: 'e2j', '英語を日本語に翻訳します。デフォルト。'
             j longOpt: 'j2e', '日本語を英語に翻訳します。'
