@@ -5,7 +5,8 @@ startScripts {
     mainClassName = 'trs.Main'
     applicationName = 'trs'
 }
-distZip.archiveName = 'CommandLineTranslator.zip'
+distZip.baseName = 'CommandLineTranslator'
+jar.baseName = 'CommandLineTranslator'
 
 sourceCompatibility = '1.7'
 targetCompatibility = '1.7'
